@@ -1,0 +1,279 @@
+<!-- transportadora, transportadora, admin -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./img/rota361.png" rel="icon" type="image/x-icon" />
+    <title>Control361</title>
+</head>
+<style>
+    *{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        transition: 1s;
+        padding: 30px;
+        background: #ffffff;
+        /* background-image: url(./img/bgwork.png);
+        background-attachment: fixed;
+        background-size: cover; */
+    }
+    h1,h2,h3,h4,h5,p{
+        color: #ffffff;
+    }
+    ul{
+        color: #474747;
+    }
+    strong{
+        color: #474747;
+    }
+    .title{
+        padding: 30px 10px;
+        margin: 30px 0 20px 0;
+        /* margin-top: 50%; */
+        background-color: #374858;
+        color: rgb(189, 189, 189);
+        border-radius: 20px;
+        text-align: center;
+        align-items: center;
+    }
+    .circleA{
+        height: 20px;
+        width: 20px;
+        border-radius: 100%;
+        background-color: #3f98eb;
+    }
+    .itemI{
+        display: flex;
+    }
+    .circleB{
+        height: 20px;
+        width: 20px;
+        border-radius: 100%;
+        background-color: #61c5ff;
+    }
+    .title img{
+        align-items: center;
+        border-radius: 20px;
+        width: 180px;
+    }
+    .sobre{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .sobre p, .circle{
+        margin: 0 0 10px 5px;
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+    }
+    .intro{
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 10px 0;
+        width: 250px;
+        border-radius: 20px;
+    }
+    .intro img{
+        display: block;
+        width: 100px;
+    }
+    .vl{
+        border-left: 2px solid #474747;
+        height: 53.5px;
+        margin: 0 50px 0 30px;
+    }
+    .description{
+        margin: 20px 0 0     0;
+        border-bottom: 2px solid #474747;
+    }
+    .descriptioncontent{
+        display: flex;
+        /* justify-content: center; */
+        margin-top: 10px;
+    }
+    .description h3{
+        color: #474747;
+    }
+    .intro p{
+        cursor: pointer;
+        text-align: center;
+        margin-top: -18px;
+        transition: .3s;
+        opacity: 0;
+    }
+    .intro p:hover{
+        /* margin-bottom: 20px; */
+        padding: 5px;
+        transition: .6s;
+        opacity: 1;
+        padding-bottom: 10px;
+        border-radius: 20px;
+    }
+
+    /* css cabuloso */
+    .page:nth-child(1) .intro:nth-child(-n+6), .page:nth-child(1) .intro p:nth-child(-n+6):hover{
+        background-color: #3f98eb;
+    }
+    .page:nth-child(2) .intro:nth-child(-n+5), .page:nth-child(2) .intro p:nth-child(-n+5):hover{
+        background-color: #3f98eb;
+    }
+    .page:nth-child(3) .intro:nth-child(-n+4), .page:nth-child(3) .intro p:nth-child(-n+3):hover{
+        background-color: #61c5ff;
+    }
+    .page:nth-child(4) .intro:nth-child(-n+4), .page:nth-child(4) .intro p:nth-child(-n+4):hover{
+        background-color: #61c5ff;;
+    }
+</style>
+<body>
+    <div class="title">
+        <div>
+            <img src="./img/control361.png" alt="">
+            <h2>Flow of Pages/Actions</h2>
+        </div>
+        <div class="sobre">
+            <div class="itemI">
+                <div class="circleA"></div>
+                <p>feitos</p>
+            </div>
+            <div class="itemI">
+                <div class="circleB"></div>
+                <p>Adicionais</p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="content">
+        <div class="page">
+            <div class="intro">
+                <img src="./img/user.png" alt="">
+                <h3>Usuário</h3>
+                <p>O sistema tera uma abordagem diferente para cada tipo de usuario</p>
+            </div>
+            <div class="intro">
+                <h5>Asseguradora</h5>
+                <p>Acesso ao <strong>Backoffice</strong>, fornece servico de seguranca para o a transportadora </p>
+            </div>
+            <div class="intro">
+                <h5>Admin</h5>
+                <p>Acesso ao <strong>Backoffice</strong>, manipulacao e vizualizacao de dados</p>
+            </div>
+            <div class="intro">
+                <h5>Transportadora</h5>
+                <p>Realizara o tranporte da carga devendo seguir as especificacoes fornecidas</p>
+            </div>
+            <div class="intro">
+                <h5>Cliente (Receptor)</h5>
+                <p>Recebera o transporte realizado</p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="intro">
+                <img src="./img/hands.png" alt="">
+                <h3>Trajetos</h3>
+                <p>O sistema girara em torno de trajetos manipulados pelos usuários</p>
+            </div>
+            <div class="intro">
+                <h5>Viagem</h5>
+                <p>Viagens englobarão rotas com suas respectivas paradas</p>
+            </div>
+            <div class="intro">
+                <h5>Estabelecimento (Paradas)</h5>
+                <p>Uma rota podera ter paradas especificas e programadas</p>
+            </div>
+            <div class="intro">
+                <h5>Rota</h5>
+                <p>Uma rota partira de dois pontos, inicio e fim podendo haver intermediacoes(paradas)</p>
+            </div>
+            <div class="intro">
+                <h5>Backoffice</h5>
+                <p>Disponível apenas para alguns tipos de usuários</p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="intro">
+                <img src="./img/dialog.png" alt="">
+                <h3>Chatbot</h3>
+                <p>Servico de AI com Python (Artificial Intelligent) para usuários e empresas</p>
+            </div>
+            <div class="intro">
+                <h5>Duvidas Frequentes</h5>
+                <p>Auxílio a usuários em questoes comuns com auxiliará processos</p>
+            </div>
+            <div class="intro">
+                <h5>Notificações</h5>
+                <p>Realizara atualizações sobre processos enviando pelo whatsapp ou telegram</p>
+            </div>
+            <div class="intro">
+                <h5>Help Center</h5>
+                <p>Caso o bot não tenha sucesso na ajuda será acionada uma equipe especializada para o atendimento</p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="intro">
+                <img src="./img/info.png" alt="">
+                <h3>Mais informações</h3>
+                <p>Cobrar valores relacionado a quantidade de dados usados no sistemas</p>
+            </div>
+            <div class="intro">
+                <h5>sobre site</h5>
+                <p>Dicas de como se portar, regras, proibicoes, explicacoes sobre o uso navegabilidade do site</p>
+            </div>
+        </div>
+    </div>
+    <div class="description">
+        <h3>Automatizações adicionais</h3>
+    </div>
+        <div class="descriptioncontent">
+            <div>
+                <ul>
+                    <li>Rota programada</li>
+                    <li>Tutorial de como usar o site</li>
+                    <li>chat bot: suporte ao cliente</li>
+                </ul>
+            </div>
+            <div class="vl"></div>
+            <div>
+                <ul>
+                    <li>chat bot: atualizacoes sobre app</li>
+                    <li>Trajetos programados</li>
+                    <li>Recalcular rota (rotas alternativas)</li>
+                </ul>
+            </div>
+            <div class="vl"></div>
+            <div>
+                <ul>
+                    <li>sistema financeiro</li>
+                    <li>cadastro de dados com excel</li>
+                    <li>Passar dados para excel (colocar limite)</li>
+                </ul>
+            </div>
+            <div class="vl"></div>
+            <div>
+                <ul>
+                    <li>Localização atual sem wifi</li>
+                    <li>Gerenciar notificações por SMS</li>
+                    <li>Integração com wase</li>
+                </ul>
+            </div>
+            <div class="vl"></div>
+            <div>
+                <ul>
+                    <li>Gerador de contrado sujeito a multas caso nao cumpra</li>
+                    <li>Convidar usuarios pelo Facebook</li>
+                    <li>Adicionar timeline para entregas</li>
+                </ul>
+            </div>
+        </div>
+</body>
+</html>
